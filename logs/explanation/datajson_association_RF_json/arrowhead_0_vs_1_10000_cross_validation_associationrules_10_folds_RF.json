@@ -1,0 +1,687 @@
+{
+    "dataset_name": "../../../../../datasets/arrowhead_0_vs_1",
+    "n_max_rules": 10000,
+    "n_folds": 10,
+    "avg_theory_initial_size": 645.7,
+    "avg_len_rules_2": 752.1,
+    "avg_len_rules_3": 9247.9,
+    "avg_len_rules_total": 10000.0,
+    "avg_nb_instances_excluded": 7.9,
+    "avg_size_majority_reason_literal_1": 105.43503968253967,
+    "avg_size_majority_reason_literal_2": 94.40214285714286,
+    "avg_size_majority_reason_feature_1": 84.67170634920635,
+    "avg_size_majority_reason_feature_2": 75.76619047619047,
+    "avg_reasons_reduced": 6.5,
+    "avg_reasons_increased": 0.0,
+    "avg_reasons_equal": 0.2,
+    "avg_madelaine_time": 2075.199283719063,
+    "avg_majoritary_reason1_time": 1.9526971172340333,
+    "avg_majoritary_reason2_time": 4.876436172553471,
+    "avg_allgoodinstance": 6.7,
+    "avg_all_n_binarized_features": 880.6,
+    "n_original_features": 249,
+    "fold_results": [
+        {
+            "fold": 1,
+            "theory_initial": 636,
+            "len_rules_2": 598,
+            "len_rules_3": 9402,
+            "len_rules_total": 10000,
+            "nb_instances_excluded": 6,
+            "size_majority_reason_literal_1": [
+                91,
+                56,
+                57,
+                127,
+                57,
+                55,
+                869,
+                57,
+                66
+            ],
+            "size_majority_reason_literal_2": [
+                81,
+                47,
+                49,
+                107,
+                48,
+                48,
+                869,
+                50,
+                57
+            ],
+            "size_majority_reason_feature_1": [
+                86,
+                56,
+                57,
+                108,
+                57,
+                54,
+                233,
+                57,
+                64
+            ],
+            "size_majority_reason_feature_2": [
+                78,
+                47,
+                49,
+                99,
+                48,
+                48,
+                233,
+                50,
+                56
+            ],
+            "number_of_reasons_reduced_after_adding_theory": 8,
+            "number_of_reasons_increased_after_adding_theory": 0,
+            "number_of_equal_reasons_after_adding_theory": 1,
+            "number_of_is_not_reason_before_adding_new_clauses": 1,
+            "number_of_is_not_reason_after_adding_new_clauses": 1,
+            "elapsed_time_aprioris": 2853.1573243141174,
+            "elapsed_time_majoritary_reason1": [
+                3.0561141967773438,
+                3.1467108726501465,
+                3.1193947792053223,
+                3.21653413772583,
+                3.125715970993042,
+                3.073988914489746,
+                4.0605785846710205,
+                3.1327106952667236,
+                3.1188461780548096
+            ],
+            "elapsed_time_majoritary_reason2": [
+                7.814258337020874,
+                7.847894191741943,
+                7.8850319385528564,
+                8.009979248046875,
+                7.971928596496582,
+                7.6695287227630615,
+                10.112131118774414,
+                7.878753423690796,
+                7.806118965148926
+            ]
+        },
+        {
+            "fold": 2,
+            "theory_initial": 657,
+            "len_rules_2": 1028,
+            "len_rules_3": 8972,
+            "len_rules_total": 10000,
+            "nb_instances_excluded": 12,
+            "size_majority_reason_literal_1": [
+                70,
+                98,
+                100
+            ],
+            "size_majority_reason_literal_2": [
+                55,
+                88,
+                89
+            ],
+            "size_majority_reason_feature_1": [
+                70,
+                91,
+                94
+            ],
+            "size_majority_reason_feature_2": [
+                55,
+                84,
+                85
+            ],
+            "number_of_reasons_reduced_after_adding_theory": 3,
+            "number_of_reasons_increased_after_adding_theory": 0,
+            "number_of_equal_reasons_after_adding_theory": 0,
+            "number_of_is_not_reason_before_adding_new_clauses": 0,
+            "number_of_is_not_reason_after_adding_new_clauses": 0,
+            "elapsed_time_aprioris": 2307.6765933036804,
+            "elapsed_time_majoritary_reason1": [
+                1.824596643447876,
+                1.7764503955841064,
+                1.8126940727233887
+            ],
+            "elapsed_time_majoritary_reason2": [
+                4.522665739059448,
+                4.21334433555603,
+                4.350324869155884
+            ]
+        },
+        {
+            "fold": 3,
+            "theory_initial": 676,
+            "len_rules_2": 539,
+            "len_rules_3": 9461,
+            "len_rules_total": 10000,
+            "nb_instances_excluded": 7,
+            "size_majority_reason_literal_1": [
+                82,
+                73,
+                72,
+                73,
+                118,
+                96,
+                72,
+                101
+            ],
+            "size_majority_reason_literal_2": [
+                78,
+                66,
+                65,
+                69,
+                99,
+                83,
+                70,
+                85
+            ],
+            "size_majority_reason_feature_1": [
+                82,
+                72,
+                71,
+                71,
+                105,
+                90,
+                71,
+                93
+            ],
+            "size_majority_reason_feature_2": [
+                77,
+                65,
+                65,
+                67,
+                93,
+                78,
+                70,
+                79
+            ],
+            "number_of_reasons_reduced_after_adding_theory": 8,
+            "number_of_reasons_increased_after_adding_theory": 0,
+            "number_of_equal_reasons_after_adding_theory": 0,
+            "number_of_is_not_reason_before_adding_new_clauses": 0,
+            "number_of_is_not_reason_after_adding_new_clauses": 0,
+            "elapsed_time_aprioris": 2510.404737472534,
+            "elapsed_time_majoritary_reason1": [
+                3.058774471282959,
+                2.9477157592773438,
+                3.0278525352478027,
+                2.999626636505127,
+                3.1072261333465576,
+                3.19336199760437,
+                3.015742063522339,
+                3.1387405395507812
+            ],
+            "elapsed_time_majoritary_reason2": [
+                7.363412141799927,
+                7.396397352218628,
+                7.308151960372925,
+                7.373087644577026,
+                6.271854639053345,
+                5.865848779678345,
+                4.246195077896118,
+                4.461883544921875
+            ]
+        },
+        {
+            "fold": 4,
+            "theory_initial": 675,
+            "len_rules_2": 698,
+            "len_rules_3": 9302,
+            "len_rules_total": 10000,
+            "nb_instances_excluded": 9,
+            "size_majority_reason_literal_1": [
+                69,
+                107,
+                107,
+                110,
+                106,
+                125
+            ],
+            "size_majority_reason_literal_2": [
+                59,
+                89,
+                95,
+                95,
+                93,
+                110
+            ],
+            "size_majority_reason_feature_1": [
+                69,
+                98,
+                95,
+                103,
+                96,
+                113
+            ],
+            "size_majority_reason_feature_2": [
+                55,
+                86,
+                90,
+                92,
+                88,
+                101
+            ],
+            "number_of_reasons_reduced_after_adding_theory": 6,
+            "number_of_reasons_increased_after_adding_theory": 0,
+            "number_of_equal_reasons_after_adding_theory": 0,
+            "number_of_is_not_reason_before_adding_new_clauses": 0,
+            "number_of_is_not_reason_after_adding_new_clauses": 0,
+            "elapsed_time_aprioris": 2119.95986866951,
+            "elapsed_time_majoritary_reason1": [
+                1.7396571636199951,
+                1.786400318145752,
+                1.8255047798156738,
+                1.8147385120391846,
+                1.800370454788208,
+                1.794907808303833
+            ],
+            "elapsed_time_majoritary_reason2": [
+                4.133322715759277,
+                4.514737606048584,
+                4.382351875305176,
+                4.440902471542358,
+                4.4370763301849365,
+                4.3154966831207275
+            ]
+        },
+        {
+            "fold": 5,
+            "theory_initial": 692,
+            "len_rules_2": 751,
+            "len_rules_3": 9249,
+            "len_rules_total": 10000,
+            "nb_instances_excluded": 9,
+            "size_majority_reason_literal_1": [
+                82,
+                66,
+                91,
+                80,
+                84,
+                64
+            ],
+            "size_majority_reason_literal_2": [
+                67,
+                58,
+                88,
+                70,
+                78,
+                58
+            ],
+            "size_majority_reason_feature_1": [
+                79,
+                65,
+                84,
+                76,
+                81,
+                64
+            ],
+            "size_majority_reason_feature_2": [
+                64,
+                58,
+                80,
+                70,
+                74,
+                57
+            ],
+            "number_of_reasons_reduced_after_adding_theory": 6,
+            "number_of_reasons_increased_after_adding_theory": 0,
+            "number_of_equal_reasons_after_adding_theory": 0,
+            "number_of_is_not_reason_before_adding_new_clauses": 0,
+            "number_of_is_not_reason_after_adding_new_clauses": 0,
+            "elapsed_time_aprioris": 3217.806793451309,
+            "elapsed_time_majoritary_reason1": [
+                2.013542652130127,
+                1.986807107925415,
+                1.9078052043914795,
+                1.8260042667388916,
+                1.8539321422576904,
+                2.4093358516693115
+            ],
+            "elapsed_time_majoritary_reason2": [
+                7.031578063964844,
+                7.140640497207642,
+                7.097126483917236,
+                7.264747619628906,
+                7.37663459777832,
+                7.538362741470337
+            ]
+        },
+        {
+            "fold": 6,
+            "theory_initial": 580,
+            "len_rules_2": 702,
+            "len_rules_3": 9298,
+            "len_rules_total": 10000,
+            "nb_instances_excluded": 5,
+            "size_majority_reason_literal_1": [
+                63,
+                72,
+                64,
+                95,
+                97,
+                103,
+                118,
+                68,
+                119,
+                90
+            ],
+            "size_majority_reason_literal_2": [
+                55,
+                57,
+                53,
+                80,
+                83,
+                82,
+                104,
+                61,
+                102,
+                80
+            ],
+            "size_majority_reason_feature_1": [
+                63,
+                69,
+                64,
+                83,
+                89,
+                90,
+                99,
+                67,
+                101,
+                81
+            ],
+            "size_majority_reason_feature_2": [
+                55,
+                55,
+                53,
+                74,
+                76,
+                79,
+                91,
+                61,
+                91,
+                74
+            ],
+            "number_of_reasons_reduced_after_adding_theory": 10,
+            "number_of_reasons_increased_after_adding_theory": 0,
+            "number_of_equal_reasons_after_adding_theory": 0,
+            "number_of_is_not_reason_before_adding_new_clauses": 0,
+            "number_of_is_not_reason_after_adding_new_clauses": 0,
+            "elapsed_time_aprioris": 1749.0420286655426,
+            "elapsed_time_majoritary_reason1": [
+                1.3571746349334717,
+                1.402515172958374,
+                1.3748652935028076,
+                1.4380033016204834,
+                1.4264602661132812,
+                1.3467767238616943,
+                1.3401172161102295,
+                1.2878975868225098,
+                1.3248796463012695,
+                1.4087626934051514
+            ],
+            "elapsed_time_majoritary_reason2": [
+                3.476377010345459,
+                3.258249282836914,
+                3.3504438400268555,
+                3.31602144241333,
+                3.3797190189361572,
+                3.502927303314209,
+                3.6914420127868652,
+                3.456622838973999,
+                3.6290853023529053,
+                3.4826126098632812
+            ]
+        },
+        {
+            "fold": 7,
+            "theory_initial": 631,
+            "len_rules_2": 744,
+            "len_rules_3": 9256,
+            "len_rules_total": 10000,
+            "nb_instances_excluded": 6,
+            "size_majority_reason_literal_1": [
+                64,
+                83,
+                82,
+                81,
+                57,
+                64,
+                80,
+                92
+            ],
+            "size_majority_reason_literal_2": [
+                56,
+                77,
+                72,
+                75,
+                50,
+                55,
+                67,
+                75
+            ],
+            "size_majority_reason_feature_1": [
+                63,
+                80,
+                79,
+                76,
+                56,
+                63,
+                73,
+                83
+            ],
+            "size_majority_reason_feature_2": [
+                56,
+                74,
+                71,
+                71,
+                50,
+                55,
+                66,
+                73
+            ],
+            "number_of_reasons_reduced_after_adding_theory": 8,
+            "number_of_reasons_increased_after_adding_theory": 0,
+            "number_of_equal_reasons_after_adding_theory": 0,
+            "number_of_is_not_reason_before_adding_new_clauses": 0,
+            "number_of_is_not_reason_after_adding_new_clauses": 0,
+            "elapsed_time_aprioris": 1478.273258447647,
+            "elapsed_time_majoritary_reason1": [
+                1.5248544216156006,
+                1.5169346332550049,
+                1.5423715114593506,
+                1.4811394214630127,
+                1.540194034576416,
+                1.4920451641082764,
+                1.5368061065673828,
+                1.5909309387207031
+            ],
+            "elapsed_time_majoritary_reason2": [
+                3.734968423843384,
+                3.754303216934204,
+                3.6664834022521973,
+                3.490755081176758,
+                3.682814121246338,
+                3.84627366065979,
+                3.837007522583008,
+                3.5172407627105713
+            ]
+        },
+        {
+            "fold": 8,
+            "theory_initial": 686,
+            "len_rules_2": 846,
+            "len_rules_3": 9154,
+            "len_rules_total": 10000,
+            "nb_instances_excluded": 6,
+            "size_majority_reason_literal_1": [
+                81,
+                70,
+                113,
+                71,
+                920,
+                107,
+                101,
+                72
+            ],
+            "size_majority_reason_literal_2": [
+                68,
+                56,
+                98,
+                54,
+                920,
+                85,
+                80,
+                63
+            ],
+            "size_majority_reason_feature_1": [
+                79,
+                68,
+                99,
+                70,
+                234,
+                96,
+                90,
+                69
+            ],
+            "size_majority_reason_feature_2": [
+                67,
+                56,
+                89,
+                54,
+                234,
+                80,
+                75,
+                63
+            ],
+            "number_of_reasons_reduced_after_adding_theory": 7,
+            "number_of_reasons_increased_after_adding_theory": 0,
+            "number_of_equal_reasons_after_adding_theory": 1,
+            "number_of_is_not_reason_before_adding_new_clauses": 1,
+            "number_of_is_not_reason_after_adding_new_clauses": 1,
+            "elapsed_time_aprioris": 1774.1851553916931,
+            "elapsed_time_majoritary_reason1": [
+                1.7727341651916504,
+                1.7482929229736328,
+                1.702864170074463,
+                1.772653341293335,
+                2.285141706466675,
+                1.8006670475006104,
+                1.8066117763519287,
+                1.7112302780151367
+            ],
+            "elapsed_time_majoritary_reason2": [
+                4.22110915184021,
+                4.1338489055633545,
+                4.03361177444458,
+                4.154447555541992,
+                5.511401414871216,
+                3.984606981277466,
+                4.002292633056641,
+                4.043717622756958
+            ]
+        },
+        {
+            "fold": 9,
+            "theory_initial": 615,
+            "len_rules_2": 898,
+            "len_rules_3": 9102,
+            "len_rules_total": 10000,
+            "nb_instances_excluded": 7,
+            "size_majority_reason_literal_1": [
+                95,
+                63,
+                86,
+                102,
+                115,
+                100,
+                116
+            ],
+            "size_majority_reason_literal_2": [
+                85,
+                48,
+                73,
+                91,
+                100,
+                88,
+                100
+            ],
+            "size_majority_reason_feature_1": [
+                93,
+                63,
+                83,
+                93,
+                101,
+                91,
+                104
+            ],
+            "size_majority_reason_feature_2": [
+                79,
+                48,
+                72,
+                85,
+                95,
+                83,
+                94
+            ],
+            "number_of_reasons_reduced_after_adding_theory": 7,
+            "number_of_reasons_increased_after_adding_theory": 0,
+            "number_of_equal_reasons_after_adding_theory": 0,
+            "number_of_is_not_reason_before_adding_new_clauses": 0,
+            "number_of_is_not_reason_after_adding_new_clauses": 0,
+            "elapsed_time_aprioris": 1403.9051191806793,
+            "elapsed_time_majoritary_reason1": [
+                1.504150152206421,
+                1.5332815647125244,
+                1.4502980709075928,
+                1.5776915550231934,
+                1.620429277420044,
+                1.5407640933990479,
+                1.5642244815826416
+            ],
+            "elapsed_time_majoritary_reason2": [
+                3.752528429031372,
+                3.7958505153656006,
+                3.700202703475952,
+                3.7064504623413086,
+                3.65812611579895,
+                3.7103402614593506,
+                3.592780828475952
+            ]
+        },
+        {
+            "fold": 10,
+            "theory_initial": 609,
+            "len_rules_2": 717,
+            "len_rules_3": 9283,
+            "len_rules_total": 10000,
+            "nb_instances_excluded": 12,
+            "size_majority_reason_literal_1": [
+                73,
+                97
+            ],
+            "size_majority_reason_literal_2": [
+                66,
+                86
+            ],
+            "size_majority_reason_feature_1": [
+                73,
+                89
+            ],
+            "size_majority_reason_feature_2": [
+                66,
+                80
+            ],
+            "number_of_reasons_reduced_after_adding_theory": 2,
+            "number_of_reasons_increased_after_adding_theory": 0,
+            "number_of_equal_reasons_after_adding_theory": 0,
+            "number_of_is_not_reason_before_adding_new_clauses": 0,
+            "number_of_is_not_reason_after_adding_new_clauses": 0,
+            "elapsed_time_aprioris": 1337.5819582939148,
+            "elapsed_time_majoritary_reason1": [
+                1.3683338165283203,
+                1.381209373474121
+            ],
+            "elapsed_time_majoritary_reason2": [
+                3.4187538623809814,
+                3.151390790939331
+            ]
+        }
+    ]
+}

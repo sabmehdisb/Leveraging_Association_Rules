@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplementary Material</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 20px;
+      }
+      h1, h2 {
+        color: #2c3e50;
+      }
+      code {
+        background-color: #f8f8f8;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        font-family: Consolas, Monaco, 'Andale Mono', monospace;
+        padding: 2px 4px;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+      ul {
+        padding-left: 25px;
+      }
+      .command {
+        background-color: #f5f5f5;
+        border-left: 4px solid #2c3e50;
+        padding: 8px 12px;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Leveraging Association Rules for Better Predictions and Better Explanations</h1>
+    <h2>Supplementary Material</h2>
+    
+    <h2>Contents</h2>
+    <p>This archive contains the following resources:</p>
+    <ul>
+      <li><strong><code>sources</code></strong>: The source code is built on the basis of a GIT clone of <a href="https://github.com/crillab/pyxai" target="_blank">https://github.com/crillab/pyxai</a>
+        <ul>
+          <li><code>sources/pyxai/pyxai/examples/RF/</code>: This directory contains the code related to the experiments described in the paper. The main files to be executed are <code>run_all_associationrules_DT</code>, <code>run_all_associationrules_RF</code>, <code>run_all_classement_DT</code>, and <code>run_all_classement_RF</code>.</li>
+        </ul>
+      </li>
+      
+      <li><strong><code>dataset</code></strong>: The datasets converted and used in our experiments.
+        <p>More specifically, for each dataset, you can find:</p>
+        <ul>
+          <li><code>datasets/&lt;dataset&gt;.csv</code>: The converted dataset.</li>
+          <li><code>datasets/&lt;dataset&gt;.types</code>: A JSON file containing all the information about the features.</li>
+        </ul>
+      </li>
+      
+      <li><strong><code>logs</code></strong>: The outputs produced by the algorithms run in the experiments.
+        <ul>
+          <li><code>logs/rectify/</code>: Results obtained with rectification using decision trees and random forests (see tables 2 and 3).</li>
+          <li><code>logs/explanation/</code>: Results showing the impact of incorporating association rules on the size of abductive explanations for decision trees and random forests (see tables 4 and 5).</li>
+          <li><code>logs/rectify/ecai_cross_classemnt.py</code>: Python code to generate tables with more information about rectification statistics.
+            <p>Execution command:</p>
+            <div class="command"><code>python3 ecai_cross_classemnt.py --path=datajson_classementrules_RF/ --plot=datajson_classementrules_RF/</code></div>
+          </li>
+          <li><code>logs/explanation/ecai_cross_association.py</code>: Python code to generate tables with more information about association rules and abductive explanations for decision trees and random forests.
+            <p>Execution command:</p>
+            <div class="command"><code>python3 ecai_cross_association.py --path=datajson_association_RF_json/ --plot=datajson_association_RF_json/</code></div>
+          </li>
+        </ul>
+      </li>
+      
+      <li><strong><code>proofs.pdf</code></strong>: The proofs of the propositions provided in the paper.</li>
+      
+      <li><strong><code>directory pyxai</code></strong>: A modified version of pyxai used to compute explanations and rectify models.</li>
+    </ul>
+
+    <h2>Setup</h2>
+    <ul>
+      <li>Ensure you are using a Linux OS and Python version ≥ 3.12.7</li>
+      <li>Install Pyxai. Follow these <a href="https://www.cril.univ-artois.fr/pyxai/documentation/installation/github/" target="_blank">instructions</a>. 
+        Instead of cloning the software, please use the source provided in this archive.</li>
+      <li>Install the required dependencies:
+        <div class="command">
+          <code>python3 -m pip install numpy==2.0.2</code><br>
+          <code>python3 -m pip install pandas==2.2.3</code><br>
+          <code>python3 -m pip install scikit-learn==1.5.2</code><br>
+          <code>python3 -m pip install xgboost==1.7.3</code>
+        </div>
+      </li>
+      <li>To compile the modified version of pyxai in the pyxai directory:
+        <div class="command">
+          <code>python3 -m pip install -e .</code>
+        </div>
+      </li>
+    </ul>
+      
+    <h2>How to Run the Program</h2>
+    <ul>
+      <li>For a given dataset, the program <code>sources/pyxai/pyxai/examples/RF/main_(...)</code> implements the two approaches presented in the paper: for decision trees and random forests.</li>
+      
+      <li>Program to rectify a model using classification rules:
+        <p>The parameter <code>-types</code> allows you to set the number of rules used .</p>
+        
+        <p>For decision tree classification rules:</p>
+        <div class="command">
+          <code>python3 sources/pyxai/pyxai/examples/RF/main_classementrules_DT.py -dataset="../../../../../datasets/breastTumor" -types=100</code>
+        </div>
+        
+        <p>For random forest classification rules:</p>
+        <div class="command">
+          <code>python3 sources/pyxai/pyxai/examples/RF/main_classementrules_RF.py -dataset="../../../../../datasets/breastTumor" -types=100</code>
+        </div>
+      </li>
+      
+      <li>Program to compute explanations using association rules:
+        <p>The parameter <code>-types</code> allows you to set the number of rules used (100, 1000, 10000, and 100000 in the paper).</p>
+        
+        <p>For decision tree association rules:</p>
+        <div class="command">
+          <code>python3 sources/pyxai/pyxai/examples/RF/main_associationrules_DT.py -dataset="../../../../../datasets/contraceptive" -types=10000</code>
+        </div>
+        
+        <p>For random forest association rules:</p>
+        <div class="command">
+          <code>python3 sources/pyxai/pyxai/examples/RF/main_associationrules_RF.py -dataset="../../../../../datasets/contraceptive" -types=10000</code>
+        </div>
+        
+        <p>Note: Only the dataset name (with the directory) needs to be specified in the <code>-dataset</code> parameter.</p>
+      </li>
+      
+      <li>To run all datasets:
+        <p>For all decision tree association rules:</p>
+        <div class="command">
+          <code>python3 run_all_associationrules_DT.py</code>
+        </div>
+        
+        <p>For all random forest association rules:</p>
+        <div class="command">
+          <code>python3 run_all_associationrules_RF.py</code>
+        </div>
+        
+        <p>For all decision tree classification rules:</p>
+        <div class="command">
+          <code>python3 run_all_classement_DT.py</code>
+        </div>
+        
+        <p>For all random forest classification rules:</p>
+        <div class="command">
+          <code>python3 run_all_classement_RF.py</code>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>
