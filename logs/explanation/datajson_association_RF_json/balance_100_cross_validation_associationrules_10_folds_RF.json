@@ -1,5 +1,5 @@
 {
-    "dataset_name": "../../../../../datasets/balance_1_vs_2",
+    "dataset_name": "../../../../../datasets/balance",
     "n_max_rules": 100,
     "n_folds": 10,
     "avg_theory_initial_size": 24.0,

@@ -1,5 +1,5 @@
 {
-    "dataset_name": "../../../../../datasets/balance_1_vs_2",
+    "dataset_name": "../../../../../datasets/balance",
     "n_original_features": 4,
     "avg_all_n_binarized_features": 19.4,
     "n_instances": 576,
